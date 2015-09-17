@@ -446,7 +446,8 @@ public class JSONObject {
 
 // Shave off trailing zeros and decimal point, if possible.
 
-        String string = Double.toString(d);
+        //String string = Double.toString(d);
+        String string = new BigDecimal(d).toPlainString();
         if (string.indexOf('.') > 0 && string.indexOf('e') < 0
                 && string.indexOf('E') < 0) {
             while (string.endsWith("0")) {
@@ -845,7 +846,8 @@ public class JSONObject {
 
 // Shave off trailing zeros and decimal point, if possible.
 
-        String string = number.toString();
+        //String string = number.toString();
+        String string = new BigDecimal(number.toString()).toPlainString();
         if (string.indexOf('.') > 0 && string.indexOf('e') < 0
                 && string.indexOf('E') < 0) {
             while (string.endsWith("0")) {
