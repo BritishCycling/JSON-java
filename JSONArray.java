@@ -1,4 +1,4 @@
-package org.json;
+package org.json.britishcycling;
 
 /*
  Copyright (c) 2002 JSON.org

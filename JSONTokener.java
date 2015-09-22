@@ -1,4 +1,4 @@
-package org.json;
+package org.json.britishcycling;
 
 import java.io.BufferedReader;
 import java.io.IOException;
